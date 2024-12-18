@@ -18,52 +18,17 @@ The **Auto Annotation using YOLOv8 and SAM** project aims to streamline the proc
 - `torch` (for YOLO model)
 - **Segment Anything Model (SAM)**
 
-## Installation
+### Example Output:  
+**Before Annotation:**  
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/auto-annotation-yolov8-sam.git
-   cd auto-annotation-yolov8-samInstall the required dependencies:
-pip install -r requirements.txt
-Download the YOLOv8 model (yolov8n.pt) from Ultralytics GitHub.
-Download or obtain the Segment Anything Model (SAM).
-How to Use
+![dog1](https://github.com/user-attachments/assets/b36808df-e5b2-43f1-839d-d9abb4348016)  
+This is the original image where objects are to be segmented and detected.  
 
-Prepare Input Images: Place your input images in the images/ folder.
-Generate YOLO and SAM Annotations: The SAM model will generate annotations for each image, saved in a text file. The YOLOv8 model will also provide predictions for the objects detected in the images.
-Run the Tool: Use the tool to combine the SAM-generated annotations and YOLO predictions, producing an annotated output image.
-Example of how to run the function:
+**After Annotation:**  
 
-image_path = 'path/to/your/image.jpg'
-label_path = 'path/to/your/label.txt'  # SAM generated label file
-output_path = 'path/to/output/image.jpg'
-model_path = 'path/to/yolov8n.pt'  # YOLOv8 model
-draw_yolo_labels_and_predictions(image_path, label_path, output_path, model_path=model_path, conf_threshold=0.25)
-Output: The final image will be saved at the specified output path, with SAM-generated annotations (blue boxes and polygons) and YOLOv8 predictions (green bounding boxes) overlaid on the image.
-Example Output:
-Before Annotation:
-
-
-This is the original image where objects are to be segmented and detected.
-
-After Annotation:
-
-
+![dog1_annotated](https://github.com/user-attachments/assets/2e9c2d7e-4210-4189-ad09-546b67646e2a)  
 This is the output image after SAM and YOLOv8 annotations are applied. The blue boxes represent SAM annotations, and the green boxes represent YOLOv8 predictions.
-Customization
 
-Confidence Threshold: Adjust the conf_threshold parameter to filter YOLOv8 predictions based on confidence. A value of 0.25 means that only predictions with at least 25% confidence will be displayed.
-Label Customization: You can modify the position, size, and color of labels (for both SAM and YOLO annotations) using OpenCV’s text functions.
-Contribution
-
-We welcome contributions to improve the tool! If you have suggestions or improvements, feel free to submit a pull request or open an issue.
-
-How to contribute:
-Fork the repository.
-Create a new branch for your changes.
-Make your modifications.
-Submit a pull request with a description of your changes.
-License
 
 This project is licensed under the MIT License - see the LICENSE file for more details.
 ![dog1_annotated](https://github.com/user-attachments/assets/c8c67820-60c4-4b1b-9851-5fc95aca5c9c)
