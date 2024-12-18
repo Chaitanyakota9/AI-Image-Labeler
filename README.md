@@ -66,5 +66,6 @@ Submit a pull request with a description of your changes.
 License
 
 This project is licensed under the MIT License - see the LICENSE file for more details.
+![dog1_annotated](https://github.com/user-attachments/assets/c8c67820-60c4-4b1b-9851-5fc95aca5c9c)
 
 
