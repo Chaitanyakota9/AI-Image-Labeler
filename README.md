@@ -27,10 +27,12 @@ This is the original image where objects are to be segmented and detected.
 **After Annotation:**  
 
 ![dog1_annotated](https://github.com/user-attachments/assets/2e9c2d7e-4210-4189-ad09-546b67646e2a)  
+
+
+
 This is the output image after SAM and YOLOv8 annotations are applied. The blue boxes represent SAM annotations, and the green boxes represent YOLOv8 predictions.
 
 
 This project is licensed under the MIT License - see the LICENSE file for more details.
-![dog1_annotated](https://github.com/user-attachments/assets/c8c67820-60c4-4b1b-9851-5fc95aca5c9c)
 
 
