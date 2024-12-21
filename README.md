@@ -18,7 +18,7 @@ The **Auto Annotation using YOLOv8 and SAM** project aims to streamline the proc
 - `torch` (for YOLO model)
 - **Segment Anything Model (SAM)**
 
-### Example Output: 
+### Example Output:
 **Before Annotation:**  
 
 ![dog1](https://github.com/user-attachments/assets/b36808df-e5b2-43f1-839d-d9abb4348016)  
